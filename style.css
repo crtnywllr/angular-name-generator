@@ -1,0 +1,130 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+button {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 2rem;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+header {
+    border: 1px solid black;
+}
+
+header .smiley {
+    border-right: 1px solid black;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+
+/*Input box styles*/
+
+.userInput {
+    padding: 5rem;
+    border: 1px solid black;
+}
+
+.userInput h2 {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.userInput input {
+    margin-top: 4rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.userInput .start {
+    margin-top: 2rem;
+    font-size: 150%;
+}
+
+.userInput.ng-hide-add,
+.userInput.ng-hide-remove {
+    transition: all ease-in-out 0.8s;
+}
+
+.userInput.ng-hide-add,
+.userInput.ng-hide-remove.ng-hide-remove-active {
+    margin-top: 0rem;
+}
+
+.userInput.ng-hide-remove,
+.userInput.ng-hide-add.ng-hide-add-active {
+    margin-top: -20rem;
+}
+
+
+/*Text Styles*/
+
+.mainText {
+    padding: 5rem;
+    border: 1px solid black;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
+
+.capitalize::first-letter {
+    text-transform: uppercase;
+}
